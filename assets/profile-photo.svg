@@ -1,0 +1,15 @@
+<svg width="720" height="900" viewBox="0 0 720 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="900" rx="48" fill="#0E1728"/>
+  <rect x="24" y="24" width="672" height="852" rx="36" fill="url(#paint0_linear)" fill-opacity="0.28" stroke="rgba(255,255,255,0.16)"/>
+  <circle cx="360" cy="298" r="132" fill="#182742"/>
+  <path d="M194 706C219.633 590.618 279.3 533 373 533C466.7 533 523.7 590.618 544 706" stroke="#73E0FF" stroke-width="32" stroke-linecap="round"/>
+  <path d="M268 327C268 275.637 309.637 234 361 234V234C412.363 234 454 275.637 454 327V369C454 420.363 412.363 462 361 462V462C309.637 462 268 420.363 268 369V327Z" fill="#223555"/>
+  <text x="360" y="800" text-anchor="middle" fill="#EDF3FF" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="800" letter-spacing="6">HUYNH TRUNG HIEU</text>
+  <text x="360" y="846" text-anchor="middle" fill="#A5B6D3" font-family="Inter, Arial, sans-serif" font-size="24">Replace this file with your real portrait before final launch if you want the exact photo.</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="91" y1="73" x2="628" y2="812" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#73E0FF"/>
+      <stop offset="1" stop-color="#8B7CFF"/>
+    </linearGradient>
+  </defs>
+</svg>

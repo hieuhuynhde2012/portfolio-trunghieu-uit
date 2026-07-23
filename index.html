@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Huynh Trung Hieu | Data Engineer Portfolio</title>
+    <meta
+      name="description"
+      content="Huynh Trung Hieu - Data Engineer portfolio with real-time pipelines, data warehouse projects, technical experience, and bilingual dark/light mode UI."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="bg-grid"></div>
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="stars" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#home">HTH</a>
+
+        <nav class="nav" aria-label="Primary">
+          <a class="nav-link active" href="#home" data-nav="home" data-i18n="nav.home">Home</a>
+          <a class="nav-link" href="#about" data-nav="about" data-i18n="nav.about">About</a>
+          <a class="nav-link" href="#skills" data-nav="skills" data-i18n="nav.skills">Skills</a>
+          <a class="nav-link" href="#projects" data-nav="projects" data-i18n="nav.projects">Projects</a>
+          <a class="nav-link" href="#experience" data-nav="experience" data-i18n="nav.experience">Experience</a>
+          <a class="nav-link" href="#education" data-nav="education" data-i18n="nav.education">Education</a>
+          <a class="nav-link" href="#certifications" data-nav="certifications" data-i18n="nav.certifications">Certifications</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="icon-button lang-toggle" id="langToggle" type="button" aria-label="Switch language">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 5h8M8 3v2m0 0c0 4-2 7-5 9m5-9c1 2 3 5 5 7m-8 2h6m6-9h3m-1.5 0c0 5-2 10-5 13m5-13c1.2 3 2.7 5.7 5 8m-9 5 2-5 2 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span id="langLabel">EN</span>
+          </button>
+
+          <button class="icon-button theme-toggle" id="themeToggle" type="button" aria-label="Switch theme">
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 3v2.2M12 18.8V21M4.93 4.93l1.56 1.56M17.5 17.5l1.57 1.57M3 12h2.2M18.8 12H21M4.93 19.07l1.56-1.56M17.5 6.5l1.57-1.57M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero section-observed">
+        <div class="container hero-inner">
+          <div class="avatar-frame reveal">
+            <div class="avatar-ring">
+              <img src="./assets/profile-photo.svg" alt="Huynh Trung Hieu portrait" class="hero-avatar" />
+            </div>
+          </div>
+
+          <p class="hero-hello reveal" data-i18n="hero.hello">Hello, I'm</p>
+          <h1 class="hero-name reveal">Huynh Trung Hieu</h1>
+
+          <div class="hero-role reveal">
+            <span class="typed-prefix" data-i18n="hero.rolePrefix">Data</span>
+            <span id="typedText" class="typed-text"></span>
+            <span class="typed-caret"></span>
+          </div>
+
+          <p class="hero-description reveal" data-i18n="hero.description">
+            Building scalable data pipelines and production-ready analytics
+            systems. Passionate about transforming raw events into trusted
+            business insight.
+          </p>
+
+          <div class="hero-actions reveal">
+            <a class="primary-button" href="#projects" data-i18n="hero.primaryCta">View Projects</a>
+            <a class="secondary-button" href="./assets/Huynh_Trung_Hieu_Data_Engineer_CV_updated.docx" download data-i18n="hero.secondaryCta">My CV</a>
+          </div>
+
+          <div class="social-links reveal">
+            <a class="social-button" href="https://github.com/hieuhuynhde2012" target="_blank" rel="noreferrer" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2C6.48 2 2 6.6 2 12.26c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.49 0-.24-.01-1.03-.01-1.86-2.78.62-3.37-1.21-3.37-1.21-.46-1.18-1.11-1.5-1.11-1.5-.9-.63.07-.61.07-.61 1 .07 1.52 1.05 1.52 1.05.88 1.56 2.31 1.11 2.87.85.09-.66.35-1.11.63-1.36-2.22-.26-4.55-1.14-4.55-5.08 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05A9.3 9.3 0 0 1 12 6.9c.85 0 1.71.12 2.51.35 1.9-1.33 2.74-1.05 2.74-1.05.56 1.4.21 2.44.11 2.7.64.72 1.03 1.63 1.03 2.75 0 3.95-2.33 4.82-4.56 5.07.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.82 0 .27.18.6.69.49A10.28 10.28 0 0 0 22 12.26C22 6.6 17.52 2 12 2Z" fill="currentColor"/>
+              </svg>
+            </a>
+            <a class="social-button" href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6.94 8.5a1.44 1.44 0 1 1 0-2.88 1.44 1.44 0 0 1 0 2.88ZM5.7 10h2.5v8H5.7v-8Zm4.06 0h2.4v1.1h.03c.33-.63 1.15-1.3 2.37-1.3 2.53 0 3 1.72 3 3.95V18h-2.5v-3.73c0-.89-.01-2.03-1.2-2.03-1.2 0-1.38.98-1.38 1.97V18h-2.5v-8Z" fill="currentColor"/>
+              </svg>
+            </a>
+            <a class="social-button" href="mailto:trunghieu201297@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 6h16v12H4z" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                <path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+
+          <a class="scroll-down reveal" href="#about" aria-label="Scroll down">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <section id="about" class="content-section section-observed">
+        <div class="container">
+          <div class="section-heading reveal">
+            <h2 data-i18n="about.title">About Me</h2>
+            <p data-i18n="about.subtitle">Get to know me better</p>
+            <span class="heading-line"></span>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-photo reveal">
+              <img src="./assets/profile-photo.svg" alt="Huynh Trung Hieu profile" />
+            </div>
+
+            <div class="about-content reveal">
+              <p data-i18n="about.p1">
+                I'm a Data Engineer with a passion for building robust data
+                infrastructure and production-ready analytics solutions. I
+                specialize in real-time pipelines, warehouse design, data
+                quality, and scalable processing systems.
+              </p>
+              <p data-i18n="about.p2">
+                With an Information Technology degree from UIT and hands-on
+                experience across banking, marketing, aviation, and genomics
+                domains, I combine engineering depth with a strong product and
+                reliability mindset.
+              </p>
+
+              <div class="info-grid">
+                <article class="info-tile">
+                  <div class="tile-icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 21s6-5.33 6-11a6 6 0 1 0-12 0c0 5.67 6 11 6 11Z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="10" r="2.3" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+                  </div>
+                  <div>
+                    <span data-i18n="about.locationLabel">Location</span>
+                    <strong data-i18n="about.locationValue">Vietnam</strong>
+                  </div>
+                </article>
+                <article class="info-tile">
+                  <div class="tile-icon">
+                    <svg viewBox="0 0 24 24"><path d="M4 19h16M6 19V8l6-3 6 3v11M9 10h1m4 0h1m-6 4h1m4 0h1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                  </div>
+                  <div>
+                    <span data-i18n="about.companyLabel">Company</span>
+                    <strong>F8A</strong>
+                  </div>
+                </article>
+                <article class="info-tile">
+                  <div class="tile-icon">
+                    <svg viewBox="0 0 24 24"><path d="M7 21v-8m10 8v-6M12 21V3m-4 4h8m-9 6h10m-8 4h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                  </div>
+                  <div>
+                    <span data-i18n="about.roleLabel">Role</span>
+                    <strong data-i18n="about.roleValue">Data Engineer</strong>
+                  </div>
+                </article>
+                <article class="info-tile">
+                  <div class="tile-icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 4v8l5 3M20 12a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                  </div>
+                  <div>
+                    <span data-i18n="about.focusLabel">Focus</span>
+                    <strong data-i18n="about.focusValue">Real-time & Warehousing</strong>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="content-section section-observed">
+        <div class="container">
+          <div class="section-heading reveal">
+            <h2 data-i18n="skills.title">Skills & Tech Stack</h2>
+            <p data-i18n="skills.subtitle">Technologies I work with</p>
+            <span class="heading-line"></span>
+          </div>
+
+          <div class="skill-groups">
+            <div class="skill-group reveal">
+              <h3 data-i18n="skills.programming">Programming Languages</h3>
+              <div class="chip-row">
+                <span class="skill-chip"><svg viewBox="0 0 24 24"><path d="M9 19H5a2 2 0 0 1-2-2v-3.5A2.5 2.5 0 0 1 5.5 11H9m6-6h3.5A2.5 2.5 0 0 1 21 7.5V11h-6m0 8v-8m0 0V5m0 6H9m6 0h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Python</span>
+                <span class="skill-chip"><svg viewBox="0 0 24 24"><path d="M7 5h10l-2 4 2 5H7l2-5-2-4Zm0 9h10v5H7v-5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>SQL</span>
+                <span class="skill-chip"><svg viewBox="0 0 24 24"><path d="m8 8-4 4 4 4m8-8 4 4-4 4M14 5l-4 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Bash/Shell</span>
+              </div>
+            </div>
+
+            <div class="skill-group reveal">
+              <h3 data-i18n="skills.dataEngineering">Data Engineering</h3>
+              <div class="chip-row">
+                <span class="skill-chip"><svg viewBox="0 0 24 24"><path d="M4 12h16M7 6h10M7 18h10M5 6h.01M5 18h.01M19 6h.01M19 18h.01" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Apache Airflow</span>
+                <span class="skill-chip"><svg viewBox="0 0 24 24"><path d="M6 18 18 6M8 6h10v10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>PySpark</span>
+                <span class="skill-chip"><svg viewBox="0 0 24 24"><path d="m12 3 7 4v10l-7 4-7-4V7l7-4Zm0 0v18m7-14-7 4-7-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>dbt</span>
+                <span class="skill-chip"><svg viewBox="0 0 24 24"><path d="M4 7h16v4H4zM4 13h16v4H4z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 9h.01M8 15h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Kafka</span>
+              </div>
+            </div>
+
+            <div class="skill-group reveal">
+              <h3 data-i18n="skills.platform">Cloud & Data Platform</h3>
+              <div class="chip-row">
+                <span class="skill-chip"><svg viewBox="0 0 24 24"><path d="M7 17h10a3 3 0 1 0-.5-5.96A5 5 0 0 0 7 9.5 3.5 3.5 0 0 0 7 17Z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>AWS</span>
+                <span class="skill-chip"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M8 5v14m8-14v14" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>PostgreSQL</span>
+                <span class="skill-chip"><svg viewBox="0 0 24 24"><path d="M5 6h14v12H5z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 10h8M8 14h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>SQL Server</span>
+              </div>
+            </div>
+
+            <div class="skill-group reveal">
+              <h3 data-i18n="skills.devops">DevOps & Visualization</h3>
+              <div class="chip-row">
+                <span class="skill-chip"><svg viewBox="0 0 24 24"><path d="M4 11h16M8 15h8M6 8h12l2 3-2 5H6l-2-5 2-3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>Docker</span>
+                <span class="skill-chip"><svg viewBox="0 0 24 24"><path d="M7 7h10v10H7zM7 7l-2 2m12-2 2 2m-2 8 2-2M7 17l-2-2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Git</span>
+                <span class="skill-chip"><svg viewBox="0 0 24 24"><path d="M4 18h16M7 15V9l5-4 5 4v6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Superset</span>
+                <span class="skill-chip"><svg viewBox="0 0 24 24"><path d="M5 18V6l6 3 8-4v12l-8 4-6-3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>Power BI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="content-section section-observed">
+        <div class="container">
+          <div class="section-heading reveal">
+            <h2 data-i18n="projects.title">Projects</h2>
+            <p data-i18n="projects.subtitle">Things I've built</p>
+            <span class="heading-line"></span>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card reveal">
+              <span class="badge" data-i18n="projects.featured">Featured</span>
+              <h3 data-i18n="projects.aviation.title">Aviation Data Warehouse Pipeline</h3>
+              <p data-i18n="projects.aviation.description">
+                A cloud-native data warehouse solution that transforms fragmented
+                aviation data into analytics-ready marts with orchestration,
+                Spark processing, data quality controls, and reconciliation.
+              </p>
+              <div class="chip-row compact">
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Airflow</span>
+                <span class="tag">Kafka</span>
+                <span class="tag">Spark</span>
+                <span class="tag">dbt</span>
+                <span class="tag">Superset</span>
+              </div>
+              <a class="text-link" href="https://github.com/hieuhuynhde2012/Aviation_Data_Warehouse.git" target="_blank" rel="noreferrer" data-i18n="projects.viewRepo">View Repository</a>
+            </article>
+
+            <article class="project-card reveal">
+              <span class="badge" data-i18n="projects.featured">Featured</span>
+              <h3 data-i18n="projects.genolab.title">GenoLab Enterprise Clinical Genomics Data Warehouse</h3>
+              <p data-i18n="projects.genolab.description">
+                A governed SQL Server warehouse and serving platform for
+                healthcare and genomics datasets with batch-safe ETL, data
+                quality runtime rules, FastAPI serving, and BI consumption.
+              </p>
+              <div class="chip-row compact">
+                <span class="tag">Python</span>
+                <span class="tag">SQL Server</span>
+                <span class="tag">Airflow</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">Docker</span>
+                <span class="tag">Metabase</span>
+              </div>
+              <a class="text-link" href="https://github.com/hieuhuynhde2012/genolab-data-lakehouse.git" target="_blank" rel="noreferrer" data-i18n="projects.viewRepo">View Repository</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="content-section section-observed">
+        <div class="container">
+          <div class="section-heading reveal">
+            <h2 data-i18n="experience.title">Experience</h2>
+            <p data-i18n="experience.subtitle">My professional journey</p>
+            <span class="heading-line"></span>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-line"></div>
+
+            <article class="timeline-item reveal">
+              <div class="timeline-date">Jun 2025 — Present</div>
+              <div class="timeline-node">
+                <svg viewBox="0 0 24 24"><path d="M8 7h8M7 11h10M8 15h8M5 5h14v14H5z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+              </div>
+              <div class="timeline-card">
+                <h3 data-i18n="experience.f8a.role">Data Engineer</h3>
+                <h4>F8A</h4>
+                <ul>
+                  <li data-i18n="experience.f8a.b1">Designed real-time ingestion pipelines using AWS Kinesis/Kafka, Spark Structured Streaming/Flink, and Amazon S3.</li>
+                  <li data-i18n="experience.f8a.b2">Built raw, cleaned, hourly, and daily data layers for streaming and historical analytics.</li>
+                  <li data-i18n="experience.f8a.b3">Modeled KPI-ready marts for installs, conversions, revenue, CPI, ROAS, retention, and campaign performance.</li>
+                  <li data-i18n="experience.f8a.b4">Implemented monitoring, reconciliation, schema handling, and freshness checks.</li>
+                </ul>
+                <div class="chip-row compact">
+                  <span class="tag">Python</span>
+                  <span class="tag">Kafka</span>
+                  <span class="tag">Spark</span>
+                  <span class="tag">Airflow</span>
+                  <span class="tag">PostgreSQL</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal">
+              <div class="timeline-date">Jan 2025 — Apr 2025</div>
+              <div class="timeline-node">
+                <svg viewBox="0 0 24 24"><path d="M5 6h14v12H5zM8 9h8M8 13h5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+              </div>
+              <div class="timeline-card">
+                <h3 data-i18n="experience.fss.role">Data Engineer Fresher</h3>
+                <h4>Financial Software Solutions HCM</h4>
+                <ul>
+                  <li data-i18n="experience.fss.b1">Participated in analyzing and validating pipelines for cloud-based banking data projects.</li>
+                  <li data-i18n="experience.fss.b2">Supported data integration, QA, workflow monitoring, and SQL-based troubleshooting.</li>
+                  <li data-i18n="experience.fss.b3">Contributed to Python processing scripts and external REST API data tasks.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal">
+              <div class="timeline-date">Dec 2024 — Present</div>
+              <div class="timeline-node">
+                <svg viewBox="0 0 24 24"><path d="M4 18h16M7 16V8l5-3 5 3v8M9 11h6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+              </div>
+              <div class="timeline-card">
+                <h3 data-i18n="experience.mindx.role">Part-time Coding Instructor</h3>
+                <h4>MindX Technology School</h4>
+                <ul>
+                  <li data-i18n="experience.mindx.b1">Taught beginner coding through Scratch, Game Maker, Python, and small app/data exercises.</li>
+                  <li data-i18n="experience.mindx.b2">Helped learners debug code, understand logic, and use Git more confidently.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="content-section section-observed">
+        <div class="container">
+          <div class="section-heading reveal">
+            <h2 data-i18n="education.title">Education</h2>
+            <p data-i18n="education.subtitle">Academic background</p>
+            <span class="heading-line"></span>
+          </div>
+
+          <div class="education-list">
+            <article class="education-card reveal">
+              <div class="edu-icon">
+                <svg viewBox="0 0 24 24"><path d="m3 9 9-4 9 4-9 4-9-4Zm3 2.5V15c0 1.7 2.7 3 6 3s6-1.3 6-3v-3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+              </div>
+              <div class="edu-body">
+                <h3>University of Information Technology (UIT)</h3>
+                <p class="edu-major" data-i18n="education.uit.major">Bachelor's Degree — Information Technology</p>
+                <p>2021 — 2025</p>
+                <p data-i18n="education.uit.school">Vietnam National University Ho Chi Minh City</p>
+                <span class="edu-badge" data-i18n="education.uit.gpa">GPA: 3.3 / 4</span>
+              </div>
+            </article>
+
+            <article class="education-card reveal">
+              <div class="edu-icon">
+                <svg viewBox="0 0 24 24"><path d="M7 19h10M8 5h8l1 4H7l1-4Zm-1 4h10l1 10H6L7 9Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+              </div>
+              <div class="edu-body">
+                <h3 data-i18n="education.nlu.title">Nong Lam University, Ho Chi Minh City</h3>
+                <p class="edu-major" data-i18n="education.nlu.major">First Bachelor's Degree — Biotechnology</p>
+                <p>2015 — 2019</p>
+                <p data-i18n="education.nlu.desc">A distinctive interdisciplinary foundation before moving fully into tech and data.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="certifications" class="content-section section-observed">
+        <div class="container">
+          <div class="section-heading reveal">
+            <h2 data-i18n="certs.title">Certifications</h2>
+            <p data-i18n="certs.subtitle">Professional credentials</p>
+            <span class="heading-line"></span>
+          </div>
+
+          <div class="cert-list">
+            <article class="cert-card reveal">
+              <div class="cert-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 3 4 7v5c0 4.4 3 8.4 8 9 5-0.6 8-4.6 8-9V7l-8-4Z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m9.5 12 1.6 1.6 3.4-3.4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div class="cert-body">
+                <h3>ETL in Python and SQL</h3>
+                <p data-i18n="certs.etl">Practical ETL foundations for data workflows and relational processing.</p>
+                <a class="text-link cert-link" href="https://drive.google.com/drive/folders/1R5gKdKUwwY3btwPXsTydQG-4dwNs1CUb" target="_blank" rel="noreferrer" data-i18n="certs.viewCredential">View Credential</a>
+              </div>
+            </article>
+
+            <article class="cert-card reveal">
+              <div class="cert-icon">
+                <svg viewBox="0 0 24 24"><path d="M5 6h14v12H5zM8 9h8M8 13h5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+              </div>
+              <div class="cert-body">
+                <h3>SQL Certification by HackerRank</h3>
+                <p data-i18n="certs.sql">Validates problem-solving and practical SQL querying ability.</p>
+                <a class="text-link cert-link" href="https://drive.google.com/drive/folders/1R5gKdKUwwY3btwPXsTydQG-4dwNs1CUb" target="_blank" rel="noreferrer" data-i18n="certs.viewCredential">View Credential</a>
+              </div>
+            </article>
+
+            <article class="cert-card reveal">
+              <div class="cert-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 21s6-2.8 6-8V5l-6-2-6 2v8c0 5.2 6 8 6 8Z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M9 12h6M12 9v6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              </div>
+              <div class="cert-body">
+                <h3>TOEIC Listening & Reading — 615</h3>
+                <p data-i18n="certs.toeic1">English reading and listening competency for technical and professional communication.</p>
+                <a class="text-link cert-link" href="https://drive.google.com/drive/folders/1R5gKdKUwwY3btwPXsTydQG-4dwNs1CUb" target="_blank" rel="noreferrer" data-i18n="certs.viewCredential">View Credential</a>
+              </div>
+            </article>
+
+            <article class="cert-card reveal">
+              <div class="cert-icon">
+                <svg viewBox="0 0 24 24"><path d="M4 12c3-5.3 13-5.3 16 0-3 5.3-13 5.3-16 0Z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+              </div>
+              <div class="cert-body">
+                <h3>TOEIC Speaking & Writing — 240</h3>
+                <p data-i18n="certs.toeic2">Supports bilingual collaboration and presentation readiness.</p>
+                <a class="text-link cert-link" href="https://drive.google.com/drive/folders/1R5gKdKUwwY3btwPXsTydQG-4dwNs1CUb" target="_blank" rel="noreferrer" data-i18n="certs.viewCredential">View Credential</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="content-section contact-section section-observed">
+        <div class="container">
+          <div class="contact-panel reveal">
+            <div class="contact-copy">
+              <h2 data-i18n="contact.title">Let's build reliable data systems together.</h2>
+              <p data-i18n="contact.subtitle">
+                I'm open to data engineering opportunities where scalable
+                pipelines, strong quality controls, and analytics impact really
+                matter.
+              </p>
+            </div>
+
+            <div class="contact-actions">
+              <a class="primary-button" href="mailto:trunghieu201297@gmail.com" data-i18n="contact.email">Email Me</a>
+              <a class="secondary-button" href="https://github.com/hieuhuynhde2012" target="_blank" rel="noreferrer" data-i18n="contact.github">GitHub Profile</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2026 Huynh Trung Hieu. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="https://github.com/hieuhuynhde2012" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.6 2 12.26c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.49 0-.24-.01-1.03-.01-1.86-2.78.62-3.37-1.21-3.37-1.21-.46-1.18-1.11-1.5-1.11-1.5-.9-.63.07-.61.07-.61 1 .07 1.52 1.05 1.52 1.05.88 1.56 2.31 1.11 2.87.85.09-.66.35-1.11.63-1.36-2.22-.26-4.55-1.14-4.55-5.08 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05A9.3 9.3 0 0 1 12 6.9c.85 0 1.71.12 2.51.35 1.9-1.33 2.74-1.05 2.74-1.05.56 1.4.21 2.44.11 2.7.64.72 1.03 1.63 1.03 2.75 0 3.95-2.33 4.82-4.56 5.07.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.82 0 .27.18.6.69.49A10.28 10.28 0 0 0 22 12.26C22 6.6 17.52 2 12 2Z" fill="currentColor"/></svg>
+          </a>
+          <a href="mailto:trunghieu201297@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
